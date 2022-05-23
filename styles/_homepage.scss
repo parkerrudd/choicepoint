@@ -1,0 +1,37 @@
+.homepage {
+    height: 100vh;
+
+    #navbar{
+        @include flexCenter(row);
+        position: fixed;
+        justify-content: space-around;
+        top: 0;
+        right: 0;
+        background-color: $bone;
+        width: 100%;
+        padding: 1em;
+    }
+
+    .nav-links {
+        @include flexCenter(row); 
+        gap: 10vw;
+        font-size: 1.3em;
+        a {
+            &:hover {
+                color: $darkPurple;
+            }
+        }
+    }
+
+    #logo { 
+        outline: 1px solid white;
+        padding: 2px;
+        font-size: 2em;
+    }
+
+    a {
+        text-decoration: none;
+        color: white;
+        transition: .3s;
+    }
+}
