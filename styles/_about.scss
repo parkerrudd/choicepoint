@@ -1,0 +1,26 @@
+#about {
+    height: 100vh;
+    color: $darkPurple;
+    background-color: $paleSilver;
+
+    .about-container {
+        @include flexCenter(row); 
+        gap: 2em;
+    }
+
+    #headshot {
+        max-height: 50vh;
+    }
+
+    .picture {
+        width: 50vw;
+        @include flexCenter(column); 
+        height: 100vh;
+    }
+
+    .about-info {
+        width: 50vw;
+        @include flexCenter(row); 
+        height: 100vh;
+    }
+}

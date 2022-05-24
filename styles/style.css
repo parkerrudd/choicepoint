@@ -1,12 +1,17 @@
 * {
   font-family: 'Times New Roman', Times, serif;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
 }
 
-.homepage {
+#homepage {
   height: 100vh;
 }
 
-.homepage #navbar {
+#homepage #navbar {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -30,7 +35,7 @@
   padding: 1em;
 }
 
-.homepage .nav-links {
+#homepage .nav-links {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -48,20 +53,158 @@
   font-size: 1.3em;
 }
 
-.homepage .nav-links a:hover {
+#homepage .nav-links a:hover {
   color: #582C4D;
 }
 
-.homepage #logo {
+#homepage #logo {
   outline: 1px solid white;
   padding: 2px;
   font-size: 2em;
 }
 
-.homepage a {
+#homepage a {
   text-decoration: none;
   color: white;
   -webkit-transition: .3s;
   transition: .3s;
+}
+
+#about {
+  height: 100vh;
+  color: #582C4D;
+  background-color: #BFB5AF;
+}
+
+#about .about-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 2em;
+}
+
+#about #headshot {
+  max-height: 50vh;
+}
+
+#about .picture {
+  width: 50vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100vh;
+}
+
+#about .about-info {
+  width: 50vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  height: 100vh;
+}
+
+#contact {
+  height: 100vh;
+  background-color: #D5B9B2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  color: #582C4D;
+}
+
+#contact .contact-info {
+  text-align: center;
+  width: 50vw;
+}
+
+#contact #form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 50vw;
+  gap: 1em;
+}
+
+#contact #email {
+  width: 33vw;
+  padding-left: 2px;
+  padding: 2px;
+  background-color: #D5B9B2;
+  border-radius: 3px;
+  border: none;
+  border: 1px solid #716f6f;
+}
+
+#contact #email-text {
+  width: 33vw;
+  max-width: 33vw;
+  height: 35vh;
+  max-height: 55vh;
+  padding-left: 2px;
+  background-color: #D5B9B2;
+  border-radius: 3px;
+}
+
+#contact #form-btn {
+  padding: .3em 1em;
+  background-color: #A26769;
+  border: none;
+  border-radius: 1px;
+  color: #582C4D;
+}
+
+#contact #form-btn:hover {
+  cursor: pointer;
+  color: #ECE2D0;
 }
 /*# sourceMappingURL=style.css.map */

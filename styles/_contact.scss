@@ -1,0 +1,48 @@
+#contact {
+    height: 100vh; 
+    background-color: $silverPink;
+    @include flexCenter(row); 
+    color: $darkPurple;
+
+    .contact-info {
+        text-align: center;
+        width: 50vw;
+    }
+    #form {
+        @include flexCenter(column); 
+        width: 50vw;
+        gap: 1em;
+    }
+
+    #email{
+        width: 33vw;
+        padding-left: 2px;
+        padding: 2px;
+        background-color: $silverPink;
+        border-radius: 3px;
+        border: none;
+        border: 1px solid rgb(113, 111, 111);
+    }
+
+    #email-text {
+        width: 33vw;
+        max-width: 33vw;
+        height: 35vh;
+        max-height: 55vh;
+        padding-left: 2px;
+        background-color: $silverPink;
+        border-radius: 3px;
+    }
+
+    #form-btn {
+        padding: .3em 1em;
+        background-color: $copperRose;
+        border: none;
+        border-radius: 1px;
+        color: $darkPurple;
+        &:hover {
+            cursor: pointer;
+            color: $bone;
+        }
+    }
+}

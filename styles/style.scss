@@ -1,13 +1,15 @@
 @import './variables'; 
-@mixin flexCenter($direction) {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: $direction; 
-}
+@import './mixins'; 
 
 * {
     font-family: 'Times New Roman', Times, serif;
+    box-sizing: border-box; 
+    padding: 0; 
+    margin: 0;
+    scroll-behavior: smooth;
 }
 
 @import './homepage';
+@import './about'; 
+@import './contact'; 
+
